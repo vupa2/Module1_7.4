@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+  <style>
+    table {
+      border-spacing: 15px 5px;
+    }
+    th, td {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th><label for="amount">Amount</label></th>
+        <th><label for="from">From Currency</label></th>
+        <th><label for="to">To Currency</label></th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input type="number" name="amount" id="amount" min="0">
+        </td>
+        <td>
+          <select name="from" id="from">
+            <option value="23000" selected="selected">VND</option>
+            <option value="1">USD</option>
+            <option value="0.8">EUR</option>
+          </select>
+        </td>
+        <td>
+          <select name="to" id="to">
+            <option value="23000">VND</option>
+            <option value="1" selected="selected">USD</option>
+            <option value="0.8">EUR</option>
+          </select>
+        </td>
+        <td><button>Convert</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+  <span id="result"></span>
+
+  <script src="app.js"></script>
+</body>
+</html>
